@@ -2,7 +2,7 @@ trigger:
   - main
 
 pool:
-  name: 'SSTSL1192'
+  name: 'Default'
 
 steps:
   - task: NodeTool@0
