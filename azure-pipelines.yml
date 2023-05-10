@@ -3,6 +3,7 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-20.04'
+  parallel: 1
 
 steps:
   - task: NodeTool@0
@@ -17,3 +18,5 @@ steps:
   - script: |
       npm run android
     displayName: 'Run Tests'
+
+Make the above script single not parallel
